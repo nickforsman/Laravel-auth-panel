@@ -29,10 +29,10 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 Screenshots of the application
 
-![cap1](cap1.png "Login form")
+![cap1](https://raw.githubusercontent.com/nickforsman/Laravel-auth-panel/master/cap1.PNG)
 
-![cap2](cap2.png "Register form")
+![cap2](https://raw.githubusercontent.com/nickforsman/Laravel-auth-panel/master/cap2.PNG)
 
-![cap3](cap3.png "Upload form")
+![cap3](https://raw.githubusercontent.com/nickforsman/Laravel-auth-panel/master/cap3.PNG)
 
-![cap4](cap4.png "User homepage")
+![cap4](https://raw.githubusercontent.com/nickforsman/Laravel-auth-panel/master/cap4.PNG)
