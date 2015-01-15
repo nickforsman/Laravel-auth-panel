@@ -57,14 +57,19 @@ Route::group(array('before' => 'auth'), function() {
 
 	});
 
-	// Search form API request
-	Route::get('/request-users', function() {
+	// Search form API request with an anonymous function
+	Route::get('/request/api/users/json', function() { // <- XML will also be available in the future
+
+		// $searchTerm = Input::get('users'); <- will be used in future
 		
 		// Get all users from db
-		$api = User::all()->toJson();
+		$api = User::select('id','username')->where('username', 'LIKE', '%%');
+
+		// Show recommended user
+		$api = $api->get();
 
 		// Return a json response for angular service call
-		return $api;
+		return Response::json($api);
 	
 	});
 
